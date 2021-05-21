@@ -1,0 +1,650 @@
+/*
+Forma de acomodar los estilos para un mejor control.
+1. posicionamineto
+2. modelo de caja (box model)
+3. tipografia 
+4. visuales
+5. otros   
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: 'Kanit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url(../assets/images/Background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-width: 375px;
+  height: auto;
+  padding: 30px;
+}
+
+.logo-bar {
+  display: inline-block;
+  max-width: 90%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.logo-img {
+  width: 145px;
+  height: 65px;
+}
+
+.burguer-button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: white;
+}
+
+.menu {
+  display: none;
+}
+
+.menu__link {
+  color: #EB5757;
+}
+
+header ul a {
+  font-family: 'Saira', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 45px;
+}
+
+.info-general {
+  display: none;
+}
+
+.details-event ul  {
+  list-style: none;
+}
+
+.details-event li {
+  margin-right: 50px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: white;
+}
+
+.date-event {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url(../assets/iconos/date.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date-djs {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url(../assets/iconos/headphone.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date-tickets {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url(../assets/iconos/tickets.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description-container {
+  width: 91%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  color: white;
+  margin-top: 10px;
+
+}
+
+h1 strong {
+  color: #53C7F0;
+}
+
+.description-container p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 15px;
+  
+}
+
+.description-event {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Saira', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: white;
+}
+
+.button-buy {
+  width: 214px;
+  height: 52px;
+  background-color: #FD275F;
+  font-family: 'Saira', sans-serif;
+  border-radius: 50px;
+  border: 1px solid #FD275F;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.container-details {
+  background-image: url(../assets/images/Djsnake.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-details div {
+  padding: 35px;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.container-details div i {
+  display: block;
+  width: 40px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.container-details div h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4.5rem;
+
+}
+
+.container-details div h3{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.container-details button {
+  margin-top: 28px;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #FD275F;
+    border: 1px solid #FD275F;
+}
+
+.container-details button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.stageDjs {
+  background-image: url(../assets/images/stage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding: 60px 20px 100px;
+}
+
+.stageDjs h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  line-height: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* .stageDjs h3 span*/ 
+.decoration_h3{ 
+  margin: 12px auto;
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #FD275F;
+}
+
+
+
+.stageDjs p {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #53C7F0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  margin: 40px 0;
+  width: 100%;
+  height: 300px;
+  
+  
+}
+.djs-grid-container {
+  display: grid;
+  width: 335px;
+  align-items: center;
+  
+}
+.item-titles {
+  font-family: 'Saira', sans-serif;
+  text-transform: uppercase;
+}
+.item-title-ticket {
+  text-align: center;
+}
+
+
+
+.item-dj {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 40px;
+  padding: 0 20px 0 20px;
+  align-content: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+.item-dj__img,
+.item-dj__stage,
+.item-dj__detail {
+  display: none;
+}
+
+.djs-grid-container div a {
+  width: 70px;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #ffffff;
+  background: #FD275F;
+  border-radius: 50px;
+}
+.djs-button {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 35px;
+  background-color: #FD275F;
+  color: #ffffff;
+  border: 1px solid #FD275F;
+  border-radius: 50px;
+}
+.djs-button a {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+
+.event-numbers {
+  display: none;
+}
+
+
+/* .djs-description {
+  display: grid;
+  padding: 60px 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 125px 300px 100px;
+} */
+.djs-description__text {
+  text-align: center;
+  grid-template-columns: 1;
+}
+.djs-description__text h3 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.djs-description__text p {
+  display: block;
+  margin-bottom: 15px;
+}
+.dj-image2 img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+.dj-image__container h4 {
+  text-align: middle;
+  text-align: center;
+  font-weight: 400px;
+  font-size: 35px;
+}
+.dj-image__container p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.arrow-left {
+  background-image: url(../assets/iconos/arrow-left.svg);
+}
+.arrow-right {
+  background-image: url(../assets/iconos/arrow-right.svg);
+}
+.djs-description__button {
+  display: none;
+}
+.dj-image1, .dj-image3 {
+  display: none;
+}
+
+
+.tickets-container {
+  min-width: 325px;
+  max-width: 100%;
+  height: auto;
+  background-color: #060F20;
+  padding: 55px 40px;
+  text-align: center;
+}
+.tickets-container__description {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  color: #53C7F0;
+}
+.tickets-container__description h3 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: white;
+}
+.tickets-container__description p {
+  display: block;
+}
+.tickets-container__cards div {
+  width: 90%;
+  height: auto;
+  margin: 35px auto;
+  padding: 50px 60px;
+  background-color: #24243C;
+  text-align: center;
+}
+.tickets-container__cards div h3 {
+  font-family: 'Saira', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #E35A78;
+}
+.tickets-container__cards div p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: white;
+}
+.tickets-container__cards div span {
+  padding: 30px 0;
+  display: inline-block;
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 2rem;
+  color: #53C7F0;
+  letter-spacing: 0.2rem;
+}
+.tickets-container__cards div sub {
+  font-family: 'Saira', sans-serif;
+  vertical-align: unset;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #53C7F0;
+}
+.tickets-container__cards div button {
+  margin: 0 auto;
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #FD275F;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #fd275f;
+}
+.card-2, .card-3 {
+  display: none;
+}
+.card__beneficios {
+  display: none;
+}
+
+
+
+.patrocinadores__container {
+  width: 100%;
+  padding: 40px;
+  height: auto;
+  background-image: url(../assets/images/patrocinio.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.patrocinadores__container h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+.logo-sponsor {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.logo-sponsor img {
+  width: 110px;
+  height: auto;
+  margin: 20px 10px 10px 10px;
+}
+.logo-sponsor-3{
+  display: none;
+}
+
+
+.galeria-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+}
+.galeria-container article {
+  padding: 60px 95px 10px 95px;
+}
+.galeria-container article p {
+  display: none;
+}
+
+.galeria-container h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: black;
+}
+
+.grid-container {
+  margin-top: 45px;
+  display: grid;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 190px);
+}
+
+.item img {
+  object-fit: cover;
+  height: 190px;
+  width: 100%;
+}
+.item5, .item6 {
+  display: none;
+}
+  
+.subitem {
+  position: relative;
+}
+
+.subitem p {
+  padding: 25px;
+  position: absolute;
+  top: 20px;
+  left: 13px;
+  width: 160px;
+  height: 150px;
+  text-align: center;
+  font-size: 1.8rem;
+  color:  #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.news__container {
+  display: none;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  padding: 50px 30px;
+  margin: 0 auto;
+  background: #19112A;
+  text-align: center;
+}
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer_left strong, p {
+  display: none;
+}
+.footer_rigth img{
+  display: none;
+}
+footer h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 30px 15px 30px 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.icon-twitter {
+  background-image: url('../assets/iconos/twitter.svg');
+}
+.icon-facebook {
+  background-image: url('../assets/iconos/facebook.svg');
+}
+.icon-instagram {
+  background-image: url('../assets/iconos/instagram.svg');
+}
+.footer-container div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer_left div a {
+  font-family: 'Saira', sans-serif;
+  text-transform: uppercase;
+  color: #FD275F;
+  margin-right: 20px;
+  margin-top: 5px;
+}
