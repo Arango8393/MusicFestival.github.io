@@ -1,7 +1,7 @@
 header {
   padding: 150px 100px;
 }
-.logo-img {
+.header__logo--img {
   width: 270px;
   height: 120px;
 }
@@ -11,21 +11,21 @@ header {
 }
 
 
-.menu {
+.header__nav {
   display: flex;
   list-style: none;
   align-items: center;
 }
 
-.info-general {
+.hero__info {
   display: inline-flex;
   margin: 70px 0 10px 40px;
 }
-.info-general li {
+.hero__info li {
   margin-right: 50px;
   color: white;
 }
-.info-general__icon--reloj {
+.hero__info--icon-reloj {
   margin-right: 3px;
   display: inline-block;
   background-image: url('../assets/iconos/reloj.svg');
@@ -33,7 +33,7 @@ header {
   height: 20px;
   vertical-align: middle;
 }
-.info-general__icon--audifono {
+.hero__info--icon-audifono {
   margin-right: 3px;
   display: inline-block;
   background-image: url('../assets/iconos/audifono.svg');
@@ -41,7 +41,7 @@ header {
   height: 20px;
   vertical-align: middle;
 }
-.info-general__icon--entradas {
+.hero__info--icon-entradas {
   margin-right: 3px;
   display: inline-block;
   background-image: url('../assets/iconos/entradas.svg');
@@ -50,10 +50,10 @@ header {
   vertical-align: middle;
 }
 
-.description-container {
+.hero__description {
   text-align: start; 
 }
-.description-event {
+.hero__description--event {
   margin-top: 20px;
   font-size: 2.2rem;
 }

@@ -36,7 +36,7 @@ header {
   padding: 30px;
 }
 
-.logo-bar {
+.header__logo {
   display: inline-block;
   max-width: 90%;
   height: auto;
@@ -47,7 +47,7 @@ header {
   list-style: none;
 }
 
-.logo-img {
+.header__logo--img {
   width: 145px;
   height: 65px;
 }
@@ -60,11 +60,11 @@ header {
   color: white;
 }
 
-.menu {
+.header__nav {
   display: none;
 }
 
-.menu__link {
+.header__nav--link {
   color: #EB5757;
 }
 
@@ -77,7 +77,7 @@ header ul a {
   margin-left: 45px;
 }
 
-.info-general {
+.hero__info {
   display: none;
 }
 
@@ -122,7 +122,7 @@ header ul a {
   background-repeat: no-repeat;
 }
 
-.description-container {
+.hero__description {
   width: 91%;
   margin: 0 auto;
   text-align: center;
@@ -141,7 +141,7 @@ h1 strong {
   color: #53C7F0;
 }
 
-.description-container p {
+.hero__description p {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.4rem;
@@ -149,7 +149,7 @@ h1 strong {
   
 }
 
-.description-event {
+.hero__description--event {
   display: block;
   margin-top: 10px;
   font-family: 'Saira', sans-serif;
