@@ -1,0 +1,135 @@
+.tickets-container {
+    min-width: 325px;
+    max-width: 100%;
+    height: auto;
+    background-color: #060F20;
+    padding: 55px 40px;
+    text-align: center;
+  }
+  .tickets-container__description {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    color: #53C7F0;
+  }
+  .tickets-container__description h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .tickets-container__description p {
+    display: block;
+  }
+  .tickets-container__cards div {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    margin: 35px auto;
+    padding: 50px 60px;
+    background-color: #24243C;
+    text-align: center;
+  }
+  .tickets-container__cards div h3 {
+    font-family: 'Saira', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #E35A78;
+  }
+  .tickets-container__cards div p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: white;
+  }
+  .tickets-container__cards div span {
+    padding: 30px 0;
+    display: inline-block;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 2rem;
+    color: #53C7F0;
+    letter-spacing: 0.2rem;
+  }
+  .tickets-container__cards div sub {
+    font-family: 'Saira', sans-serif;
+    vertical-align: unset;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #53C7F0;
+  }
+  .tickets-container__cards div button {
+    margin: 0 auto;
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #FD275F;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid #fd275f;
+  }
+  .card-2, .card-3 {
+    display: none;
+  }
+  .card__beneficios {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    .tickets-container{
+    }
+    .tickets-container__description {
+      text-align: initial;
+      margin: 0px 50px;
+    }
+    .tickets-container__description h3 {
+      font-size: 6.4rem;
+      line-height: 100px;
+      margin-top: 50px;
+    }
+    .tickets-container__description h3 span {
+      width: 213px;
+    }
+    .tickets-container__description p {
+      width: 52%;
+      margin: 30px 0;
+      font-size: 2.2rem;
+      line-height: 35px;
+    }
+    .tickets-container__cards {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .tickets-container__cards div {
+      width: 380px;
+      margin: 35px 50px;
+      padding: 50px 50px;
+    }
+    .card1, .card-2, .card-3 {
+      display: block;
+      margin: 0 10px;
+    }
+    
+    .tickets-container__cards div p {
+      font-size: 1.6rem;
+    }
+    .card__beneficios {
+      width: 75%;
+      margin: 0 auto;
+      display: block;
+      color: white;
+      font-size: 1.8rem;
+      text-align: start;
+      list-style-type: square;
+    }
+  }
+  

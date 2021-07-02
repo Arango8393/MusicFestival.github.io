@@ -1,0 +1,35 @@
+/*
+Forma de acomodar los estilos para un mejor control.
+1. posicionamineto
+2. modelo de caja (box model)
+3. tipografia 
+4. visuales
+5. otros   
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /*helpers*/
+.border-title{ 
+    margin: 12px auto;
+      display: block;
+      width: 150px;
+      height: 4px;
+      background-color: #FD275F;
+  }

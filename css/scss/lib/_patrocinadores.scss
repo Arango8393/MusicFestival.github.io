@@ -1,0 +1,76 @@
+.patrocinadores__container {
+    width: 100%;
+    padding: 40px;
+    height: auto;
+    background-image: url('../assets/images/patrocinio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .patrocinadores__container h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .logo-sponsor {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .logo-sponsor img {
+    width: 110px;
+    height: auto;
+    margin: 20px 10px 10px 10px;
+  }
+  .logo-sponsor-3{
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    .patrocinadores__container {
+      width: 100%;
+      height: auto;
+    }
+    .patrocinadores__container h3 {
+      text-align: end;
+      margin-right: 50px;
+      font-size: 6.4rem;
+      line-height: 100px;
+    }
+    .patrocinadores__container h3 span {
+      margin-left: auto;
+      width: 330px;
+      margin-top: 10px;
+    }
+    .patrocinadores-grid {
+      width: 100%;
+      height: auto;
+      padding: 50px 20px;
+      align-items: baseline;
+      grid-template-columns: 23% 23% 23% 23%;
+      display: grid;
+      grid-gap: 30px;
+    }
+    .patrocinadores-grid figure {
+      width: 95%;
+      display: flex;
+      order: 4;
+      justify-content: flex-end;
+      align-self: center;
+    }
+    .patrocinadores-grid div img {
+      width: 100%;
+      height: auto;
+      margin: 30px;
+    } 
+    .logo-sponsor-3 {
+      display: grid;
+    }
+  }
+  
