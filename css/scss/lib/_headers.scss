@@ -1,219 +1,161 @@
-header {
+  .header {
     background-image: url(../assets/images/Background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     min-width: 375px;
     height: auto;
     padding: 30px;
+    @include background-img;
+      &__logo {
+        display: inline-block;
+        max-width: 90%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        &--img {
+          width: 145px;
+          height: 65px;
+        }
+      }
+      &__nav {
+        display: none;      
+      }
   }
-  
-  
-  
-  .header__logo {
-    display: inline-block;
-    max-width: 90%;
-    height: auto;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .header__logo--img {
-    width: 145px;
-    height: 65px;
-  }
-  
   .burguer-button {
     width: 40px;
     height: 40px;
     font-size: 20px;
     border-radius: 50%;
-    color: white;
+    color: $color-claro;
   }
-  
-  .header__nav {
-    display: none;
-  }
-  
-  .header__nav--link {
-    color: #EB5757;
-  }
-  
-  header ul a {
-    font-family: 'Saira', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 45px;
-  }
-  
   .hero__info {
     display: none;
   }
-  
-  .details-event ul  {
-    list-style: none;
-  }
-  
-  .details-event li {
-    margin-right: 50px;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    color: white;
-  }
-  
-  .date-event {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    background-image: url(../assets/iconos/date.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .date-djs {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    background-image: url(../assets/iconos/headphone.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .date-tickets {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    background-image: url(../assets/iconos/tickets.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
   .hero__description {
     width: 91%;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  h1 {
-    font-weight: normal;
-    font-size: 3rem;
-    line-height: 3.8rem;
-    color: white;
-    margin-top: 10px;
-  
-  }
-  
-  h1 strong {
-    color: #53C7F0;
-  }
-  
-  .hero__description p {
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
-    margin-bottom: 15px;
+    h1 {
+      font-weight: normal;
+      font-size: 3rem;
+      line-height: 3.8rem;
+      color: $color-claro;
+      margin-top: 10px;
+      text-align: center;
+    }   
+    h1 strong {
+      color: $color-terciario;
+    }
     
+    p {
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      margin-bottom: 15px;  
+    }
+    &--event {
+      display: block;
+      margin-top: 10px;
+      font-family: $fuente2;
+      font-size: 2.2rem;
+      font-weight: 400;
+      line-height: 3.5rem;
+      color: $color-claro;
+    }
   }
-  
-  .hero__description--event {
-    display: block;
-    margin-top: 10px;
-    font-family: 'Saira', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 400;
-    line-height: 3.5rem;
-    color: white;
-  }
-  
   .button-buy {
     width: 214px;
     height: 52px;
-    background-color: #FD275F;
-    font-family: 'Saira', sans-serif;
+    background-color: $color-secundario;
+    font-family: $fuente2;
     border-radius: 50px;
-    border: 1px solid #FD275F;
+    border: 1px solid $color-secundario;
     font-size: 1.8rem;
-    color: white;
+    color: $color-claro;
   }
   
   @media screen and (min-width: 1024px){
-    header {
+    .header {
       padding: 150px 100px;
+        &__logo--img {
+          width: 270px;
+          height: 120px;
+        }
+        &__nav {
+          display: flex;
+          list-style: none;
+          align-items: center;
+          & a {
+            font-family: $fuente2;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color-claro;
+            font-size: 1.5rem;
+            margin-left: 45px;
+          }
+          & a:hover {
+          color: $color-secundario;
+          }
+        }
     }
-    .header__logo--img {
-      width: 270px;
-      height: 120px;
-    }
-    
     .burguer-button {
       display: none;
     }
-    
-    
-    .header__nav {
-      display: flex;
-      list-style: none;
-      align-items: center;
-    }
-    
     .hero__info {
       display: inline-flex;
       margin: 70px 0 10px 40px;
+      & ul {
+        list-style: none;
+      }
+      & li {
+        margin-right: 50px;
+        color: $color-claro;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+      }    
+      &--icon-reloj {
+        margin-right: 3px;
+        display: inline-block;
+        background-image: url('../assets/iconos/reloj.svg');
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      &--icon-audifono {
+        margin-right: 3px;
+        display: inline-block;
+        background-image: url('../assets/iconos/audifono.svg');
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      &--icon-entradas {
+        margin-right: 3px;
+        display: inline-block;
+        background-image: url('../assets/iconos/entradas.svg');
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
     }
-    .hero__info li {
-      margin-right: 50px;
-      color: white;
-    }
-    .hero__info--icon-reloj {
-      margin-right: 3px;
-      display: inline-block;
-      background-image: url('../assets/iconos/reloj.svg');
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-    }
-    .hero__info--icon-audifono {
-      margin-right: 3px;
-      display: inline-block;
-      background-image: url('../assets/iconos/audifono.svg');
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-    }
-    .hero__info--icon-entradas {
-      margin-right: 3px;
-      display: inline-block;
-      background-image: url('../assets/iconos/entradas.svg');
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-    }
-    
     .hero__description {
       text-align: start; 
-    }
-    h1 {
-      font-size: 7.2rem;
-      line-height: 8.6rem;
-    }
-    .hero__description--event {
+      h1 {
+        font-size: 7.2rem;
+        line-height: 8.6rem;
+        text-align: start;
+      }
+      &--event {
       margin-top: 20px;
       font-size: 2.2rem;
-    }
-    .button-buy {
-      margin-top: 30px;
-    }
+      }
+    }  
+    
+  
   }
-
   .container-details {
     background-image: url(../assets/images/Djsnake.jpg);
     width: 100%;
@@ -221,53 +163,47 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  
-  .container-details div {
-    padding: 35px;
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-  }
-  
-  .container-details div i {
-    display: block;
-    width: 40px;
-    height: 35px;
-    margin: 0 auto;
-  }
-  
-  .container-details div h4 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
-    line-height: 4.5rem;
-  
-  }
-  
-  .container-details div h3{
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
-  
-  .container-details button {
-    margin-top: 28px;
-      width: 150px;
-      height: 40px;
-      border-radius: 50px;
-      background-color: #FD275F;
-      border: 1px solid #FD275F;
-  }
-  
-  .container-details button a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Saira', sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 2rem;
+      div {
+        padding: 35px;
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        color: $color-claro;
+      img {
+        display: block;
+        width: 40px;
+        height: 35px;
+        margin: 0 auto;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 4.5rem;
+      }
+      h3{
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+      button {
+        margin-top: 28px;
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: $color-secundario;
+        border: 0;
+        a {
+          text-decoration: none;
+          color: $color-claro;
+          font-family: $fuente2;
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+      }
+    }
+    
   }
   
   @media screen and (min-width: 1024px){
@@ -275,8 +211,3 @@ header {
       display: none;
     }
   }
-
-
-
-
-

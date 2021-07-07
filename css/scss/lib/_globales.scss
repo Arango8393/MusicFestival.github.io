@@ -4,8 +4,27 @@ Forma de acomodar los estilos para un mejor control.
 2. modelo de caja (box model)
 3. tipografia 
 4. visuales
-5. otros   
+5. otros-(mixins e elementos de prepocesador) 
 */
+
+/*Variables*/
+
+$color-primario: #060F20;
+$color-secundario: #FD275F;
+$color-terciario: #53C7F0;
+$color-claro: #FFFFFF;
+
+$fuente1: 'Kanit', sans-serif; 
+$fuente2: 'Saira', sans-serif;
+
+/*Mixins, condicionales y demás*/
+
+@mixin background-img {
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 *{
     margin: 0;
@@ -21,7 +40,7 @@ Forma de acomodar los estilos para un mejor control.
   
   html {
     font-size: 62.5%;
-    font-family: 'Kanit', sans-serif;
+    font-family: $fuente1;
     scroll-behavior: smooth;
   }
 
@@ -31,5 +50,5 @@ Forma de acomodar los estilos para un mejor control.
       display: block;
       width: 150px;
       height: 4px;
-      background-color: #FD275F;
+      background-color: $color-secundario;
   }

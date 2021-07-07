@@ -7,28 +7,29 @@
       display: flex;
       padding: 100px 0;
       justify-content: space-around;
-      background-color: #060F20;
-    }
-    .event--numbers__item{
-      display: flex;
-      width: 160px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .event-numbers div img {
-      width: 80px;
-      height: auto;
-    }
-    .event-numbers h4 {
-      margin: 0 15px;
-      font-size: 50px;
-      color: #fff;
-      font-family: 'Saira', sans-serif;
-      text-align: center;
-    }
-    .event-numbers p {
-      font-size: 2rem;
-      color: #53C7F0;
+      background-color: $color-primario;
+      &__item{
+        display: flex;
+        width: 160px;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+          width: 80px;
+          height: auto;
+        }
+        h4 {
+          margin: 0 15px;
+          font-size: 50px;
+          color: #fff;
+          font-family: $fuente2;
+          text-align: center;
+        }
+        p {
+          font-size: 2rem;
+          color: $color-terciario;
+          text-align: center;
+        }
+      }      
     }
   }
   

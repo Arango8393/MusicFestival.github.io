@@ -1,170 +1,154 @@
 .presentaciones {
     background-image: url(../assets/images/stage.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: auto;
     padding: 60px 20px 100px;
-  }
-  
-  .presentaciones article h3 {
-    font-family: 'Saira', sans-serif;
-    font-size: 3rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    font-style: normal;
-    line-height: 3.6rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-  }
-  
-  .presentaciones article p {
-    display: block;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #53C7F0;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  
-  }
-  .presentaciones__container {
-    display: flex;
-    justify-content: center;
-    /* width: 330px;
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-    width: 100%;
-    height: 300px;   */
-  }
-  .presentaciones__container--grid {
-    display: grid;
-    width: 335px;
-    align-items: center;  
-  }
-  .presentaciones__item--titles {
-    font-family: 'Saira', sans-serif;
-    text-transform: uppercase;
-  }
-  .item-title-ticket {
-    text-align: center;
-  }
-  
-  
-  
-  .presentaciones__item--dj {
+    @include background-img;
+      article {
+        h3 {
+          font-family: $fuente2;
+          font-size: 3rem;
+          font-weight: 300;
+          letter-spacing: 0.05em;
+          font-style: normal;
+          line-height: 3.6rem;
+          text-align: center;
+          text-transform: uppercase;
+          color: $color-claro;
+        }
+        p {
+          display: block;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          line-height: 2rem;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: $color-terciario;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        
+        }
+
+      }
+    &__container {
+      display: flex;
+      justify-content: center;
+      &--grid {
+        display: grid;
+        width: 335px;
+        align-items: center; 
+        div {
+          a {
+              width: 70px;
+              text-decoration: none;
+              padding: 5px 20px;
+              color: $color-claro;
+              background: $color-secundario;
+              border-radius: 50px;
+            }
+        } 
+      }
+    }
+    &__item--titles {
+      font-family: $fuente2;
+      text-transform: uppercase;
+    }
+  &__item--dj {
     display: grid;
     align-items: center;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 40px;
     padding: 0 20px 0 20px;
     align-content: center;
-    color: white;
+    color: $color-claro;
     background: rgba(0, 0, 0, 0.6);
     font-weight: 500;
     font-size: 1.1rem;
   }
+  }
   
-  
+  .item-title-ticket {
+    text-align: center;
+  }  
   .item-dj__img,
   .item-dj__stage,
   .item-dj__detail {
     display: none;
   }
   
-  .presentaciones__container--grid div a {
-    width: 70px;
-    text-decoration: none;
-    padding: 5px 20px;
-    color: #ffffff;
-    background: #FD275F;
-    border-radius: 50px;
-  }
   .djs-button {
     display: block;
     margin: 0 auto;
     width: 120px;
     height: 35px;
-    background-color: #FD275F;
-    color: #ffffff;
-    border: 1px solid #FD275F;
+    background-color: $color-secundario;
+    color: $color-claro;
+    border: 1px solid $color-secundario;
     border-radius: 50px;
+    a {
+      color: $color-claro;
+      text-decoration: none;
+      
+    }
   }
-  .djs-button a {
-    color: #ffffff;
-    text-decoration: none;
-    
-  }
-  
   @media screen and (min-width: 1024px){
     .presentaciones {
       padding: 70px;
       height: auto;
-    }
-    .presentaciones article h3 {
-      font-size: 6.4rem;
-      font-weight: 600;
-      line-height: 10rem;
-      text-align: start;
-      margin-left: 0;
-    }
-    /*
-    modificacion helper, no funciono 
-      span.border-title.border-title__presentaciones{
-      width: 297px; 
-      color: black;
-    } */
-  
-    .presentaciones article p {
-      font-size: 2.2rem;
-      line-height: 34.6px;
-      text-align: start;
-      width: 65%;
-    }
-    
-    
-    .container {
-      display: grid;
-      justify-content: center;
-      margin: 40px 0;
-      width: 100%;
-      height: auto; 
-    }
-    .presentaciones__container--grid {
-      display: grid;
-      width: 88vw;
-      align-items: center; 
-      grid-row-gap: 12px;
-    }
-    
-    .presentaciones__item--dj {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 0.5fr 0.5fr 0.6fr 0.5fr 0.5fr 0.5fr;
-      grid-template-rows: 180px;
-      padding: 0 20px 0 20px;
-      align-content: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.6);
-      font-weight: 500;
-      font-size: 2.5rem;
-    }
-    .presentaciones__container--grid div:first-child {
-      pointer-events: none;
-    } 
-    
-    .presentaciones__item--dj:hover {
-      background-color: rgba(253, 39, 95, 0.8);
-    }
-    .presentaciones__item--titles {
-      height: 65px;
-    }
-    
+      article {
+        h3 {
+          font-size: 6.4rem;
+          font-weight: 600;
+          line-height: 10rem;
+          text-align: start;
+          margin-left: 0;
+        }
+        /*
+        modificacion helper, no funciono 
+          span.border-title.border-title__presentaciones{
+          width: 297px; 
+          color: black;
+        } */
+        p {
+          font-size: 2.2rem;
+          line-height: 34.6px;
+          text-align: start;
+          width: 65%;
+        }
+      }
+
+      &__container--grid {
+        display: grid;
+        width: 88vw;
+        align-items: center; 
+        grid-row-gap: 12px;
+        div:first-child {
+          pointer-events: none;
+        } 
+        div a {
+          width: 120px;
+        }
+      }
+
+      &__item--dj {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.5fr 0.5fr 0.6fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 180px;
+        padding: 0 20px 0 20px;
+        align-content: center;
+        color: $color-claro;
+        background: rgba(0, 0, 0, 0.6);
+        font-weight: 500;
+        font-size: 2.5rem;
+        &:hover {
+          background-color: rgba(253, 39, 95, 0.8);
+        }
+      }
+      &__item--titles {
+        height: 65px;
+      }
+    }   
     .item-dj__img,
     .item-dj__stage,
     .item-dj__detail,
@@ -180,9 +164,6 @@
       grid-column-end: 7;
       text-align: start;
       margin-left: 15px;
-    }
-    .presentaciones__container--grid div a {
-      width: 120px;
     }
     .djs-button {
       width: 290px;

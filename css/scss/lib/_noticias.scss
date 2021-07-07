@@ -8,62 +8,71 @@
       height: auto;
       padding: 140px 100px;
       background-image: url("../assets/images/bg-news.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      @include background-img;
+      h2 {
+        color: $color-claro;
+        font-family: $fuente2;
+        text-align: end;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 6.4rem;
+      }
+    } 
+
+    .news__left {
+      figure {
+        img {
+          width: 100%;
+          height: 650px;
+        }
+      }
+      article {
+        h6 {
+          font-size: 2.5rem;
+          font-weight: 400;
+          color: $color-secundario;
+        }
+        h3 {
+          font-family: $fuente2;
+          font-weight: 600;
+          font-size: 4.5rem;
+          color: $color-claro;
+          text-transform: uppercase;
+        }
+        p {
+          display: block;
+          font-family: $fuente2;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 2rem;
+          color: $color-terciario;
+        }
+      }
     }
-    .news__container h2 {
-      color: white;
-      font-family: 'saira', sans-serif;
-      text-align: end;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 6.4rem;
-    }
-    .news__left figure img {
-      width: 100%;
-      height: 650px;
-    }
-    .news__left article h6 {
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: #FD275F;
-    }
-    .news__left article h3 {
-      font-family: 'saira', sans-serif;
-      font-weight: 600;
-      font-size: 4.5rem;
-      color: white;
-      text-transform: uppercase;
-    }
-    .news__left article p {
-      display: block;
-      font-family: 'saira', sans-serif;
-      font-weight: 300;
-      font-style: normal;
-      font-size: 2rem;
-      color: #53C7F0;
-    }
-    .news__rigth  figure img{
-      width: 100%;
-      height: 250px;
-      margin-top: 35px;
-    }
-    .news__rigth article {
-      margin-bottom: 35px;
-    }
-    .news__rigth article h6 {
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: #FD275F;
-    }
-    .news__rigth article h3 {
-      font-family: 'saira', sans-serif;
-      font-weight: 600;
-      font-size: 3rem;
-      color: white;
-      text-transform: uppercase; 
-    }
+    .news__rigth {
+      figure {
+        img{
+          width: 100%;
+          height: 250px;
+          margin-top: 35px;
+        }
+      }
+      article {
+        margin-bottom: 35px;
+        h6 {
+          font-size: 2.5rem;
+          font-weight: 400;
+          color: $color-secundario;
+        }
+        h3 {
+          font-family: $fuente2;
+          font-weight: 600;
+          font-size: 3rem;
+          color: $color-claro;
+          text-transform: uppercase; 
+        }
+      }
+    } 
     .news__container--grid {
       display: grid;
       width: 90%;
