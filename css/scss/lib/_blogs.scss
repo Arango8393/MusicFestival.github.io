@@ -1,0 +1,153 @@
+.noticias__contenedor{
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 65px 10px;
+    article {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 65px;
+        h2 {
+            font-family: $fuente1;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 400;
+
+        }
+        p {
+            font-family: $fuente2;
+            font-weight: 400;
+            font-size: 2.2rem;
+            strong {
+                display: none;
+            }
+        }
+    }
+    &--flex{
+        
+        img {
+            width: 100%;
+            max-height: 280px;
+        }
+        .noticias__contenedor--izquierdo{
+            display: none;
+        }
+        .noticias__contenedor--derecho {
+            h3 {
+                margin: 0 auto;
+                width: 80%;
+                font-family: $fuente1;
+                font-weight: 500;
+                font-size: 2.4rem;
+                color: $color-secundario;
+                margin-bottom: 10px;
+            }
+            h4{
+                display: none;
+            }
+            p {
+                text-align: start;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .noticias__contenedor{
+        display: flex;
+        padding: 100px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        article {
+            text-align: start;
+            width: 70%;
+            h2 {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 6.4rem;
+                font-family: $fuente2;
+            }
+            p {
+                font-size: 2.2rem;
+                font-weight: 400;
+                strong {
+                    display: block;
+                    font-size: inherit;
+                    font-weight: inherit;
+                }
+            }
+        }
+        &--flex{
+            display: flex;
+            img {
+                width: 100%;
+                max-height: 450px;
+                
+            }
+            .noticias__contenedor--izquierdo{
+                display: flex;
+                width: 20%;
+                height: 50%;
+                margin-right: 50px;
+                flex-direction: column;
+                text-align: center;
+                &-icons {
+                    width: 100px;
+                    height: auto;
+                    margin-bottom: 20px;
+                    &-lg {
+                        border: 3px solid aqua;
+                        p {
+                            text-align: center;                        }
+                    }
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    p {
+                        font-family: $fuente1;
+                        font-size: 3rem;
+                        font-weight: 700;
+                        text-align: center;
+                        color: $color-secundario;
+                    }
+                }
+            }
+            .noticias__contenedor--derecho {
+                article {
+                    width: 100%;
+                    h3 {
+                        width: 100%;
+                        font-family: $fuente1;
+                        font-weight: 500;
+                        font-size: 4.8rem;
+                        text-align: start;
+                        color: $color-secundario;
+                        margin-bottom: 10px;
+                    }
+                    h4{
+                        display: block;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        span {
+                            vertical-align: middle;
+                            img {
+                                width: 20px;
+                            }
+                        }
+                    }
+                    p {
+                        font-family: $fuente1;
+                        text-align: start;
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                    }
+                }
+                
+            }
+        }
+    }
+    .noticias__contenedor--izquierdo{
+        display: flex;
+    }
+}

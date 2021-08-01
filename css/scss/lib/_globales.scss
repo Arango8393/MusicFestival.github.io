@@ -20,11 +20,40 @@ $fuente2: 'Saira', sans-serif;
 /*Mixins, condicionales y demás*/
 
 @mixin background-img {
-  background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+@mixin  button{
+    background-color: $color-secundario;
+    font-family: $fuente2;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid $color-secundario;
+    color: $color-claro;
+  }
+@mixin btnm1 {
+  width: 215px;
+  height: 50px;
+  font-size: 18px;  
+}
+@mixin btnm2 {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;  
+}
+@mixin btnm3 {
+  width: 120px;
+  height: 35px;
+  font-size: 14px;  
+}
+@mixin btnm4 {
+  width: 70px;
+  height: 20px;
+  font-size: 11px;  
+}
+    
 
 *{
     margin: 0;

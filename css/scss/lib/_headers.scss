@@ -7,7 +7,7 @@
     @include background-img;
       &__logo {
         display: inline-block;
-        max-width: 90%;
+        max-width: 100%;
         height: auto;
         display: flex;
         margin: 0 auto;
@@ -68,12 +68,10 @@
   .button-buy {
     width: 214px;
     height: 52px;
-    background-color: $color-secundario;
-    font-family: $fuente2;
-    border-radius: 50px;
-    border: 1px solid $color-secundario;
     font-size: 1.8rem;
-    color: $color-claro;
+    @include button;
+    @include btnm1;
+    
   }
   
   @media screen and (min-width: 1024px){
