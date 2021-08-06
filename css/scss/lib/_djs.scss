@@ -23,9 +23,18 @@
 .contenedor__der{
     width: 100%;
     div {
+        font-family: $fuente1;
         img {
             width: 100%;
             max-width: 500px;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 3.5rem;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.8rem;
         }
     }
 }
@@ -38,11 +47,22 @@
 
 @media screen and (min-width: 1024px) {
   .djs__contenedor--index{
-      padding: 100px 90px 100px 0;
+      padding: 0px 0px 0px 0px;
+      &-bdr{
+          width: 100%;
+          height: 140px;
+          border-left: 10px solid $color-secundario;
+      }
+      &-bdr2{
+          width: 100%;
+          height: 140px;
+          border-right: 10px solid $color-secundario;
+      }
       
   }
   
   .djs__contenedor--index-flex{
+      padding-right: 90px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -57,6 +77,10 @@
         margin-bottom: 40px;
         font-size: 6rem;
         font-weight: 600;
+        .border-title__djs{
+            width: 150px;
+            margin-right: 0;
+        }
     }
       p {
           font-size: 2.2rem;
@@ -66,6 +90,7 @@
       figure {
           width: 100%;
           margin-bottom: 10px;
+          padding-right: 10px;
           text-align: end;
           img {
               width: 50px;

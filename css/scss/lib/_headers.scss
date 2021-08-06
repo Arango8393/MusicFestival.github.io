@@ -34,7 +34,7 @@
     display: none;
   }
   .hero__description {
-    width: 91%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     h1 {
@@ -103,7 +103,7 @@
     }
     .hero__info {
       display: inline-flex;
-      margin: 70px 0 10px 40px;
+      margin: 70px 0 10px 0px;
       & ul {
         list-style: none;
       }

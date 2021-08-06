@@ -102,13 +102,13 @@
           line-height: 10rem;
           text-align: start;
           margin-left: 0;
-        }
-        /*
-        modificacion helper, no funciono 
-          span.border-title.border-title__presentaciones{
-          width: 297px; 
+          .border-title__presentaciones{
+            width: 297px; 
           color: black;
-        } */
+          margin-left: 0;
+          }
+        }
+
         p {
           font-size: 2.2rem;
           line-height: 34.6px;

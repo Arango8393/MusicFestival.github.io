@@ -10,11 +10,12 @@
       background-color: $color-primario;
       &__item{
         display: flex;
-        width: 160px;
+        width: 170px;
         flex-wrap: wrap;
         justify-content: center;
+        text-transform: uppercase;
         img {
-          width: 80px;
+          width: 90px;
           height: auto;
         }
         h4 {

@@ -18,7 +18,27 @@
     }
     div {
         margin-bottom: 20px;
+        span{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
+  }
+  .djs__contenedor--down{
+      text-align: center;
+      h4 {
+          font-family: $fuente1;
+          font-size: 3.5rem;
+          font-weight: 400;
+          text-decoration: none;
+          a {
+              color: $color-primario;
+          }
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
   }
   .dj-secundario {
     display: none;
@@ -26,10 +46,11 @@
   
   @media screen and (min-width: 1024px) {
     .djs__contenedor{
-        padding: 100px
+        padding: 0 0 20px 0; 
     }
     
     .djs__contenedor--flex{
+        padding-left: 100px;
         max-width: 1440px;
         height: auto;
     }
@@ -41,10 +62,16 @@
             font-size: 6rem;
             font-weight: 600;
             text-align: start;
+            .border-title__djs{
+                width: 150px;
+                margin-left: 0;
+            }
         }
         p {
+            text-align: start;
             font-size: 2.2rem;
             font-weight: 400;
+            margin-left: 0;
         }
     }
     .arrows {
@@ -75,6 +102,66 @@
     }
     .dj-secundario{
         display: block;
+    }
+  }
+  .modal__container{
+      width: 100vw;
+      height: auto;
+      background-color: transparent;
+      &--int{
+          width: 80%;
+          height: 80%;
+          margin: 0 auto;
+          background-color: $color-primario;
+          &-sup{
+                display: flex;
+                padding: 50px;
+                figure{
+                    width: 50%;
+                    text-align: center;
+                img {
+                    width: 70%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+            article {
+                width: 50%;
+                color: $color-claro;
+                h3 {
+                    font-size: 5rem;
+                    font-weight: 600;
+                    font-family: $fuente2;
+                }
+                p {
+                    font-size: 2rem;
+                    font-weight: 300;
+                    font-family: $fuente1;
+                    margin-bottom: 25px;
+                }  
+            }
+            
+        }
+        &-inf{
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+            .grid-modif{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr 1fr;
+                div {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+            }
+        }
+        
+
+            
+        
     }
   }
   
@@ -126,13 +213,20 @@
   @media screen and (min-width: 1024px) {
       .presentaciones__contenedor{
           width: 70%;
-          padding: 100px 0 100px 100px;
+          padding: 0px 0 100px 0;
           text-align: start;
+          article{
+              padding-left: 100px;
+          }
           h2{
             font-size: 6.4rem;
             font-weight: 600;
             text-transform: capitalize;
             font-family: $fuente2;
+            .border-title__presentaciones2{
+                width: 150px;
+                margin-left: 0;
+            }
           }
           p {
               font-size: 2.2rem;
@@ -144,6 +238,8 @@
               }
           }
         }
-
+        .presentaciones__art{
+            display: none;
+        }
   }
 

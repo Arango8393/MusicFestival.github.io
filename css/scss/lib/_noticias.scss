@@ -16,6 +16,10 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 6.4rem;
+        .border-title__news{
+          width: 275px;
+          margin-right: 0;
+        }
       }
     } 
 
@@ -70,6 +74,7 @@
           font-size: 3rem;
           color: $color-claro;
           text-transform: uppercase; 
+          
         }
       }
     } 
