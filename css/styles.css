@@ -667,6 +667,9 @@ html {
     display: -ms-flexbox;
     display: flex;
   }
+  .contenedor__der div h4 {
+    text-align: center;
+  }
   .djs__contenedor--img {
     width: 100%;
     height: auto;
@@ -1689,23 +1692,29 @@ footer h3 {
 }
 
 .modal__container {
-  width: 100vw;
-  height: auto;
-  background-color: transparent;
+  position: absolute;
+  padding-top: 80px;
+  z-index: 10;
+  width: inherit;
+  height: 1500px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__container--int {
   width: 80%;
-  height: 80%;
+  height: 95%;
   margin: 0 auto;
   background-color: #060F20;
+  padding: 80px;
 }
 
 .modal__container--int-sup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .modal__container--int-sup figure {
@@ -1714,13 +1723,13 @@ footer h3 {
 }
 
 .modal__container--int-sup figure img {
-  width: 70%;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .modal__container--int-sup article {
-  width: 50%;
+  width: 43%;
   color: #FFFFFF;
 }
 
@@ -1738,12 +1747,13 @@ footer h3 {
 }
 
 .modal__container--int-inf {
-  width: 900px;
-  height: 600px;
+  width: 90%;
+  height: 90%;
   margin: 0 auto;
 }
 
 .modal__container--int-inf .grid-modif {
+  margin-top: 0;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr 1fr;
@@ -1753,6 +1763,10 @@ footer h3 {
 .modal__container--int-inf .grid-modif div img {
   width: 100%;
   height: 100%;
+}
+
+.modal__container--int .hide {
+  display: none;
 }
 
 .preview__musical--container-left {
