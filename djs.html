@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Djs</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Saira:wght@400;700&display=swap" rel="stylesheet">
+    <!-- agregamos el CSS de la libreria -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"
+        />
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
     <header class="header header__us">
@@ -15,7 +21,7 @@
           <figure >
             <img class="header__logo--img" src="./assets/images/logo.png" alt="">
           </figure>
-          <i class="burguer-button" id="burguer-menu"><img src="./assets/iconos/burguer.svg" alt=""></i>    
+          <i class="burguer-button" id="burguer-menu"><img src="./assets/iconos/burguer.svg" alt=""></i>
           <ul class="header__nav">
             <a href="./index.html">Wp festival</a>
             <a href="./djs.html">Djs</a>
@@ -27,7 +33,7 @@
         <h1>DJS</h1>
         <h3><strong>WP</strong> FESTIVAL > DJS</h3>
     </header>
-    
+
     <section class="djs__contenedor">
       <div class="djs__contenedor--index-bdr"></div>
       <div class="djs__contenedor--flex">
@@ -36,21 +42,27 @@
           DJS <span class="border-title border-title__djs"></span>
           </h3>
           <p>
-          Ellos son el verdadero foco de atención de nuestro evento. 
-          </p>  
+          Ellos son el verdadero foco de atención de nuestro evento.
+          </p>
           <div class="arrows arrows--djs">
           <span class="arrow arrow-left"></span><img class="arrow" src="./assets/iconos/right.svg"></span>
-          <span class="arrow arrow-right"><img class="arrow" src="./assets/iconos/left.svg" alt=""></span>  
+          <span class="arrow arrow-right"><img class="arrow" src="./assets/iconos/left.svg" alt=""></span>
           </div>
         </div>
         <div class="djs__contenedor--down">
-          <div class="djs__contenedor--img dj-principal">
+          <!-- Aca agregamos los data -->
+          <div class="djs__contenedor--img dj-principal" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">
             <img class="" src="./assets/images/anne.jpg" alt="imagen de Dj Anne" width="350px" height="auto">
             <h4>
-            <a id="nombre-dj" href="#modal__container">Dj Anne</a> 
+            <a id="nombre-dj" href="#modal__container">Dj Anne</a>
             </h4>
             <p>Ambient Electronic</p>
-          </div>
+        </div>
+        <!-- Aca agregamos el contenido de la modal fijarse en el id, arriba donde se da click debe ser igual a data-izimodal-open -->
+            <div id="modal" data-iziModal-fullscreen="true"  data-iziModal-title="DJ Anne"  data-iziModal-subtitle="Bogota event electronic 2020"  data-iziModal-icon="icon-home">
+                <!-- Modal content -->
+                Aca va la informacion del DJ Anne Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo sint non impedit dignissimos, natus, unde cumque, ex adipisci a accusantium eos vero. Debitis cupiditate quis molestiae sunt quae nostrum iusto?
+            </div>
           <div class="djs__contenedor--img dj-secundario">
             <img class="" src="./assets/images/anne.jpg" alt="imagen de Dj Anne" width="350px" height="auto">
             <h4>
@@ -125,21 +137,21 @@
       <div class="about__wp--container preview__musical--container">
         <article class="about__wp--description preview__musical--container-left">
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-          <p> 
+          <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
           </p>
           <div class="about__numbers">
             <div class="event-numbers__item about__numbers--item about__numbers--item-3">
                 <i><img src="./assets/iconos/musica.svg" alt=""></i>
                 <h4>1000</h4>
-                <p>Horas de musica</p>  
+                <p>Horas de musica</p>
               </div>
               <div class="event-numbers__item about__numbers--item about__numbers--item-2">
                 <i><img src="./assets/iconos/Djs.svg" alt=""></i>
                 <h4>12</h4>
-                <p>Djs Top Mundial</p>  
+                <p>Djs Top Mundial</p>
               </div>
           </div>
         </article>
@@ -149,7 +161,7 @@
     </section>
     <footer>
         <div class="footer__container">
-          
+
           <div class="footer_left">
             <h3>Wp festival music <strong>- Bogotá</strong></h3>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -170,22 +182,22 @@
             <img src="./assets/images/mapa.png" alt="">
           </div>
         </div>
-      </footer>
-      <section id="data-djs"  class="modal__container hide">
+    </footer>
+    <section id="data-djs"  class="modal__container hide">
         <div class="modal__container--int">
           <div class="modal__container--int-sup">
             <figure>
               <img id="close" src="./assets/images/monza.png" alt="">
               <!-- <div></div> -->
             </figure>
-            
+
             <article>
               <h3>DJ CARL COX    <img src="./assets/iconos/X.svg" alt=""> </h3>
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</p>
-    
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p> 
-              
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> 
+
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </article>
           </div>
           <div class="modal__container--int-inf">
@@ -210,30 +222,28 @@
               </div>
             </div>
           </div>
-          
-        </div>
-      </section>
-      <script>
-        
-        const dataDjs = document.getElementById('data-djs')
-        const nameDj = document.getElementById('nombre-dj')
 
-      //Al hacer click en el nombre del dj desplegue el modal
-      function MostrarModal(addEvenetListener){
-        if(event.matches) {
-          nameDj.addEventListener('click', IniciarModal)
-        }else{
-          nameDj.addEventListener('click', IniciarModal)
-        } 
-      }
-      //Remover clase hide que contiene el display none para iniciar la ventana modal.
-      function IniciarModal() {
-        if (dataDjs.classList.contains('hide')) {
-                        dataDjs.classList.remove('hide')
-                    }else {
-                        dataDjs.classList.add('hide')
-                    }
-          }
- 
-      </script>
+        </div>
+    </section>
+
+
+    <!-- Agregaamos Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Agregamos el js de la libreria izimodal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha512-8aOKv+WECF2OZvOoJWZQMx7+VYNxqokDKTGJqkEYlqpsSuKXoocijXQNip3oT4OEkFfafyluI6Bm6oWZjFXR0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- inicializamos el izimodal -->
+    <script>
+      $("#modal").iziModal({
+                title: 'Contact Business Broker',
+                subtitle: '',
+                headerColor: '#e8ac42',
+                background: '#ffffff',
+                width: 945,
+                radius: 12,
+                padding: 30,
+                overlayColor: '#031B4C',
+            });
+    </script>
+
 </body>
