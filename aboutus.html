@@ -7,23 +7,42 @@
     <title>Acerca de</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Saira:wght@400;700&display=swap" rel="stylesheet">
+    <!-- agregamos el CSS de la libreria -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"/>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header header__us">
-        <div class="header__logo">
-          <figure >
-            <img class="header__logo--img" src="./assets/images/logo.png" alt="">
-          </figure>
-          <i class="burguer-button" id="burguer-menu"><img src="./assets/iconos/burguer.svg" alt=""></i>    
-          <ul class="header__nav">
-            <a href="#">Wp festival</a>
-            <a href="#">Djs</a>
-            <a href="#">Presentaciones</a>
-            <a href="#">Blog</a>
-            <a href="#">Contacto</a>
-          </ul>
+      <div class="header__logo">
+        <figure >
+          <img class="header__logo--img" src="./assets/images/logo.png" alt="">
+        </figure>
+        <div data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">
+          <i class="burguer-button" id="burguer-menu"><img src="./assets/iconos/burguer.svg" alt=""></i>
+          <div id="modal" data-iziModal-fullscreen="false"  data-iziModal-title=""  data-iziModal-subtitle=""  data-iziModal-icon="icon-home" class="header__nav">
+            <div>
+              <img class="header__logo--img" src="./assets/images/logo.png" alt="">
+              <img data-izimodal-close class="close" src="./assets/iconos/X.svg" alt="">
+            </div>
+            <div class="menu-desplegable">
+              <a href="./aboutus.html">Wp festival</a>
+              <a href="./djs.html">Djs</a>
+              <a href="./presentaciones.html">Presentaciones</a>
+              <a href="#">Contacto</a>
+              <a href="./blog.html">Blog</a>
+            </div>
+          </div>    
         </div>
+        <div class="menu-lg">
+          <a href="./aboutus.html">Wp festival</a>
+          <a href="./djs.html">Djs</a>
+          <a href="./presentaciones.html">Presentaciones</a>
+          <a href="./blog.html">Blog</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
         <h1>Acerca de</h1>
         <h3><strong>WP</strong> FESTIVAL > Acerca de</h3>
     </header>
@@ -166,5 +185,23 @@
       </div>
     </div>
   </footer>
+  <!-- Agregaamos Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Agregamos el js de la libreria izimodal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha512-8aOKv+WECF2OZvOoJWZQMx7+VYNxqokDKTGJqkEYlqpsSuKXoocijXQNip3oT4OEkFfafyluI6Bm6oWZjFXR0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- inicializamos el izimodal -->
+  <script>
+    $("#modal").iziModal({
+
+              headerColor: '#7f7f7f)',
+              background: 'rgba(6,15,32,0.9)',
+              width: 1000,
+              radius: 12,
+              padding: 30,
+              overlayColor: '',
+              openFullscreen: true,
+          });
+  </script>
 </body>
 </html>

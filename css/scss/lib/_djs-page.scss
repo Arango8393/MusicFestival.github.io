@@ -98,12 +98,16 @@
         p {
             font-size: 1.8rem;
             font-weight: 300;
+            text-align: start;
         }
     }
     .dj-secundario{
         display: block;
     }
   }
+    .iziModal-header {
+        display: none;
+    }
     .modal__container{
       position: absolute;
       padding-top: 80px;
@@ -117,6 +121,10 @@
           margin: 0 auto;
           background-color: $color-primario;
           padding: 80px;
+          div {
+              text-align: end;
+              cursor: pointer;
+          }
           &-sup{
                 display: flex;
                 justify-content: space-between;
