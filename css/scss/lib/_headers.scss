@@ -3,7 +3,8 @@
     width: 100%;
     min-width: 375px;
     height: auto;
-    padding: 30px;
+    padding: 30px 30px 65px 30px;
+    position: relative;
     @include background-img;
       &__logo {
         display: inline-block;
@@ -18,9 +19,35 @@
           width: 145px;
           height: 65px;
         }
+        .menu-lg {
+          display: none;
+        }
       }
       &__nav {
-        display: none;      
+        
+        div {
+          .close  {
+            float: right;
+          }
+        }
+        .menu-desplegable {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          text-transform: uppercase;
+          margin: 50px auto;
+          text-align: center;
+
+          
+          a {
+            text-decoration: none;
+            color: white;
+            margin-top: 12px;
+            font-size: 20px;
+
+          }
+        }
       }
   }
   .burguer-button {
@@ -35,7 +62,7 @@
   }
   .hero__description {
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
     text-align: center;
     h1 {
       font-weight: normal;
@@ -53,6 +80,7 @@
       font-weight: 300;
       font-size: 1.5rem;
       line-height: 2.4rem;
+      margin-top: 15px;
       margin-bottom: 15px;  
     }
     &--event {
@@ -67,24 +95,43 @@
   }
   .button-buy {
     width: 214px;
+    margin-top: 15px;
     height: 52px;
     font-size: 1.8rem;
     @include button;
     @include btnm1;
-    
+    a {
+      color: $color-claro;
+    }
   }
   
   @media screen and (min-width: 1024px){
     .header {
       padding: 150px 100px;
+        &__logo{
+          .menu-lg {
+            display: block;
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: $color-claro;
+              font-size: 1.4rem;
+              font-family: $fuente2;
+              font-weight: 700;
+              margin-left: 40px;
+              text-align: end;
+            }
+            a:hover {
+              color: $color-secundario;
+            }
+          }
+        }
         &__logo--img {
           width: 270px;
           height: 120px;
         }
         &__nav {
-          display: flex;
-          list-style: none;
-          align-items: center;
+          display: none;
           & a {
             font-family: $fuente2;
             text-transform: uppercase;
@@ -154,6 +201,7 @@
     
   
   }
+
   .container-details {
     background-image: url(../assets/images/Djsnake.jpg);
     width: 100%;

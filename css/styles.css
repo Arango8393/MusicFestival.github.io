@@ -41,7 +41,8 @@ html {
   width: 100%;
   min-width: 375px;
   height: auto;
-  padding: 30px;
+  padding: 30px 30px 65px 30px;
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,8 +70,35 @@ html {
   height: 65px;
 }
 
-.header__nav {
+.header__logo .menu-lg {
   display: none;
+}
+
+.header__nav div .close {
+  float: right;
+}
+
+.header__nav .menu-desplegable {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-transform: uppercase;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.header__nav .menu-desplegable a {
+  text-decoration: none;
+  color: white;
+  margin-top: 12px;
+  font-size: 20px;
 }
 
 .burguer-button {
@@ -87,7 +115,7 @@ html {
 
 .hero__description {
   width: 100%;
-  margin: 0 auto;
+  margin: 15px auto;
   text-align: center;
 }
 
@@ -108,6 +136,7 @@ html {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.4rem;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -123,6 +152,7 @@ html {
 
 .button-buy {
   width: 214px;
+  margin-top: 15px;
   height: 52px;
   font-size: 1.8rem;
   background-color: #FD275F;
@@ -136,22 +166,36 @@ html {
   font-size: 18px;
 }
 
+.button-buy a {
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 1024px) {
   .header {
     padding: 150px 100px;
+  }
+  .header__logo .menu-lg {
+    display: block;
+  }
+  .header__logo .menu-lg a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-family: "Saira", sans-serif;
+    font-weight: 700;
+    margin-left: 40px;
+    text-align: end;
+  }
+  .header__logo .menu-lg a:hover {
+    color: #FD275F;
   }
   .header__logo--img {
     width: 270px;
     height: 120px;
   }
   .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: none;
   }
   .header__nav a {
     font-family: "Saira", sans-serif;
@@ -380,6 +424,7 @@ html {
 .djs-button {
   display: block;
   margin: 0 auto;
+  margin-top: 30px;
   width: 120px;
   height: 35px;
   background-color: #FD275F;
@@ -667,8 +712,14 @@ html {
     display: -ms-flexbox;
     display: flex;
   }
+  .contenedor__der div {
+    text-align: start;
+  }
   .contenedor__der div h4 {
-    text-align: center;
+    margin-left: 10px;
+  }
+  .contenedor__der div p {
+    margin-left: 10px;
   }
   .djs__contenedor--img {
     width: 100%;
@@ -893,9 +944,8 @@ html {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -1408,7 +1458,7 @@ footer h3 {
 
 .about__wp h2 .border-title-about {
   width: 150px;
-  margin-left: 0;
+  margin: 0 auto;
 }
 
 .about__wp--description {
@@ -1480,6 +1530,9 @@ footer h3 {
     font-size: 6.4rem;
     width: 100%;
     text-align: start;
+  }
+  .about__wp h2 .border-title-about {
+    margin-left: 0;
   }
   .about__wp--description {
     display: inline-block;
@@ -1685,10 +1738,15 @@ footer h3 {
   .djs__contenedor--img p {
     font-size: 1.8rem;
     font-weight: 300;
+    text-align: start;
   }
   .dj-secundario {
     display: block;
   }
+}
+
+.iziModal-header {
+  display: none;
 }
 
 .modal__container {
@@ -1706,6 +1764,11 @@ footer h3 {
   margin: 0 auto;
   background-color: #060F20;
   padding: 80px;
+}
+
+.modal__container--int div {
+  text-align: end;
+  cursor: pointer;
 }
 
 .modal__container--int-sup {

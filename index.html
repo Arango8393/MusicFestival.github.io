@@ -7,7 +7,11 @@
   <title>WP music festival</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Saira:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+  <!-- agregamos el CSS de la libreria -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"/>
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>    
   <header class="header">
@@ -15,14 +19,29 @@
         <figure >
           <img class="header__logo--img" src="./assets/images/logo.png" alt="">
         </figure>
-        <i class="burguer-button" id="burguer-menu"><img src="./assets/iconos/burguer.svg" alt=""></i>    
-        <ul class="header__nav">
+        <div data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">
+          <i class="burguer-button" id="burguer-menu"><img src="./assets/iconos/burguer.svg" alt=""></i>
+          <div id="modal" data-iziModal-fullscreen="false"  data-iziModal-title=""  data-iziModal-subtitle=""  data-iziModal-icon="icon-home" class="header__nav">
+            <div>
+              <img class="header__logo--img" src="./assets/images/logo.png" alt="">
+              <img data-izimodal-close class="close" src="./assets/iconos/X.svg" alt="">
+            </div>
+            <div class="menu-desplegable">
+              <a href="./aboutus.html">Wp festival</a>
+              <a href="./djs.html">Djs</a>
+              <a href="./presentaciones.html">Presentaciones</a>
+              <a href="#">Contacto</a>
+              <a href="./blog.html">Blog</a>
+            </div>
+          </div>    
+        </div>
+        <div class="menu-lg">
           <a href="./aboutus.html">Wp festival</a>
           <a href="./djs.html">Djs</a>
           <a href="./presentaciones.html">Presentaciones</a>
           <a href="./blog.html">Blog</a>
           <a href="#">Contacto</a>
-        </ul>
+        </div>
       </div>
       <ul class="hero__info">
         <li><span class="hero__info--icon-reloj"></span> 21 MAYO 2021</li>
@@ -35,7 +54,7 @@
   
         <p class="hero__description--event">Bogotá <b>WP Festival Music</b> es un evento <br> de música electrónica con Djs que estan dentro del <b>Top 20</b> en el mundo.</p>
   
-        <button class="button-buy">Comprar Tickets</button>
+        <button class="button-buy"><a href="#tickets">Comprar Tickets</a></button>
       </div>  
   </header>
   <section class="container-details">
@@ -71,40 +90,40 @@
             <div class="item-dj__artist">Dj Monza</div>
             <div class="item-dj__img"><img src="./assets/images/monza.png" alt="" width="150" height="160"></div>
             <div class="item-dj__stage">Principal</div>
-            <div class="item-dj__detail"><a href="">Tickets</a> </div>
-            <div class="item-dj__tickets"><a href="">Tickets</a> </div>
+            <div class="item-dj__detail"><a href="">Detalle</a> </div>
+            <div class="item-dj__tickets"><a href="#tickets">Tickets</a> </div>
           </div>
           <div class="presentaciones__item--dj">
-            <div class="item-dj__hour">12:00</div>
-            <div class="item-dj__artist">Dj Monza</div>
+            <div class="item-dj__hour">2:00</div>
+            <div class="item-dj__artist">Dj Tiesto</div>
             <div class="item-dj__img"><img src="./assets/images/Rectangle 5.png" alt="" width="150" height="160"></div>
             <div class="item-dj__stage">Principal</div>
-            <div class="item-dj__detail"><a href="">Tickets</a> </div>
-            <div class="item-dj__tickets"><a href="">Tickets</a> </div>         
+            <div class="item-dj__detail"><a href="">Detalle</a> </div>
+            <div class="item-dj__tickets"><a href="#tickets">Tickets</a> </div>         
           </div>
           <div class="presentaciones__item--dj">
-            <div class="item-dj__hour">12:00</div>
-            <div class="item-dj__artist">Dj Monza</div>
+            <div class="item-dj__hour">3:00</div>
+            <div class="item-dj__artist">Alok</div>
             <div class="item-dj__img"><img src="./assets/images/Rectangle 5 (1).png" alt="" width="150" height="160"></div>
             <div class="item-dj__stage">Principal</div>
-            <div class="item-dj__detail"><a href="">Tickets</a> </div>
-            <div class="item-dj__tickets"><a href="">Tickets</a> </div>    
+            <div class="item-dj__detail"><a href="">Detalle</a> </div>
+            <div class="item-dj__tickets"><a href="#tickets">Tickets</a> </div>    
           </div>
           <div class="presentaciones__item--dj">
-            <div class="item-dj__hour">12:00</div>
-            <div class="item-dj__artist">Dj Monza</div>
+            <div class="item-dj__hour">5:00</div>
+            <div class="item-dj__artist">Vintage Culture</div>
             <div class="item-dj__img"><img src="./assets/images/Rectangle 5 (2).png" alt="" width="150" height="160"></div>
             <div class="item-dj__stage">Principal</div>
-            <div class="item-dj__detail"><a href="">Tickets</a> </div>
-            <div class="item-dj__tickets"><a href="">Tickets</a> </div>
+            <div class="item-dj__detail"><a href="">Detalle</a> </div>
+            <div class="item-dj__tickets"><a href="#tickets">Tickets</a> </div>
           </div>
           <div class="presentaciones__item--dj">
-            <div class="item-dj__hour">12:00</div>
-            <div class="item-dj__artist">Dj Monza</div>
+            <div class="item-dj__hour">7:00</div>
+            <div class="item-dj__artist">Dj Popof</div>
             <div class="item-dj__img"><img src="./assets/images/Rectangle 5 (3).png" alt="" width="150" height="160"></div>
             <div class="item-dj__stage">Principal</div>
-            <div class="item-dj__detail"><a href="">Tickets</a> </div>
-            <div class="item-dj__tickets"><a href="">Tickets</a> </div> 
+            <div class="item-dj__detail"><a href="">Detalles</a> </div>
+            <div class="item-dj__tickets"><a href="#tickets">Tickets</a> </div> 
           </div>         
         </div>
       </div>
@@ -176,7 +195,7 @@
     </div >
     <div class="djs__contenedor--index-bdr2"></div>    
 </section>
-  <section class="tickets-container">
+  <section id="tickets" class="tickets-container">
     <article class="tickets-container__description">
       <h3>Tickets <span class="border-title border-title__tickets"></span></h3>
       <p>Tenemos varias opciones para todos los gustos, consigue una que se adapte a ti.</p>
@@ -325,5 +344,23 @@
       </div>
     </div>
   </footer>
+  <!-- Agregaamos Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Agregamos el js de la libreria izimodal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha512-8aOKv+WECF2OZvOoJWZQMx7+VYNxqokDKTGJqkEYlqpsSuKXoocijXQNip3oT4OEkFfafyluI6Bm6oWZjFXR0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- inicializamos el izimodal -->
+  <script>
+    $("#modal").iziModal({
+
+              headerColor: '#7f7f7f)',
+              background: 'rgba(6,15,32,0.9)',
+              width: 1000,
+              radius: 12,
+              padding: 30,
+              overlayColor: '',
+              openFullscreen: true,
+          });
+  </script>
 </body>
 </html>

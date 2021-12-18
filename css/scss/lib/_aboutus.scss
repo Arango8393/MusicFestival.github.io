@@ -51,8 +51,9 @@
         font-weight: 400;
         .border-title-about{
             width: 150px;
-            margin-left: 0;
+            margin: 0 auto;
         }
+        
     }
     &--description{
         display: none;
@@ -102,6 +103,10 @@
             font-size: 6.4rem;
             width: 100%;
             text-align: start;
+            .border-title-about{
+                
+                margin-left: 0;
+            }
         }
         &--description {
             display: inline-block;
